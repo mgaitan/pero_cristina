@@ -5,10 +5,7 @@ function cristina(){
     while(node = ni.nextNode()) {
 
         if (/\S/.test(node.nodeValue)) {
-
-            var words = node.nodeValue.split(" ").length;
-            console.log(node.nodeValue + ' ' + words);
-            node.nodeValue = 'Cristina '.repeat(words);
+            node.nodeValue = node.nodeValue.replace(/[\wáéíóúñÑ]+/g, "Cristina");
         }
     }
 }
