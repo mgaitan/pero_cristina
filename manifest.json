@@ -8,6 +8,7 @@
       "16": "icon16.png",
       "48": "icon48.png",
       "128": "icon128.png" },
+  "homepage_url": "https://github.com/mgaitan/pero_cristina",
   "content_scripts": [ {
       "js": [ "inject.js" ],
       "matches": [ "*://*.clarin.com/*" ],
